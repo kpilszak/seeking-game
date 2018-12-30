@@ -24,7 +24,29 @@ namespace seeking_game
         public Form1()
         {
             InitializeComponent();
-            
+            CreateObjects();
+        }
+
+        private void CreateObjects()
+        {
+            livingRoom = new RoomWithDoor("Living room", "ancient carpet", "oak door with a brass handle");
+            diningRoom = new Room("Dining room", "crystal chandelier");
+            kitchen = new RoomWithDoor("Kitchen", "stainless steel cutlery", "sliding doors");
+            frontYard = new OutsideWithDoor("Front yard", false, "oak door with a brass handle");
+            backYard = new OutsideWithDoor("Back yard", true, "sliding door");
+            garden = new Outside("Garden", false);
+
+            livingRoom.Exits = new Location[] { diningRoom };
+            diningRoom.Exits = new Location[] { livingRoom, kitchen };
+            kitchen.Exits = new Location[] { diningRoom };
+            frontYard.Exits = new Location[] { backYard, garden };
+            backYard.Exits = new Location[] { frontYard, garden };
+            garden.Exits = new Location[] { frontYard, backYard };
+
+            livingRoom.DoorLocation = frontYard;
+            kitchen.DoorLocation = backYard;
+            frontYard.DoorLocation = livingRoom;
+            backYard.DoorLocation = kitchen;
         }
 
         private void goHere_Click(object sender, EventArgs e)
