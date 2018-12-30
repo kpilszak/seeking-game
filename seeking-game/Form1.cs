@@ -25,6 +25,7 @@ namespace seeking_game
         {
             InitializeComponent();
             CreateObjects();
+            MoveToANewLocation(livingRoom);
         }
 
         private void CreateObjects()
@@ -47,6 +48,23 @@ namespace seeking_game
             kitchen.DoorLocation = backYard;
             frontYard.DoorLocation = livingRoom;
             backYard.DoorLocation = kitchen;
+        }
+
+        private void MoveToANewLocation(Location newLocation)
+        {
+            currentLocation = newLocation;
+
+            exits.Items.Clear();
+            for (int i = 0; i < currentLocation.Exits.Length; i++)
+                exits.Items.Add(currentLocation.Exits[i].Name);
+            exits.SelectedIndex = 0;
+
+            description.Text = currentLocation.Description;
+
+            if (currentLocation is IHasExteriorDoor)
+                goThroughTheDoor.Visible = true;
+            else
+                goThroughTheDoor.Visible = false;
         }
 
         private void goHere_Click(object sender, EventArgs e)
