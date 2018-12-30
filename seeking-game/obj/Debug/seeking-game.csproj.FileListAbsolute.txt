@@ -1,0 +1,10 @@
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking-game.csprojAssemblyReference.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking_game.Form1.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking_game.Properties.Resources.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking-game.csproj.GenerateResource.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking-game.csproj.CoreCompileInputs.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\bin\Debug\seeking-game.exe.config
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\bin\Debug\seeking-game.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\bin\Debug\seeking-game.pdb
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking-game.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\seeking-game\seeking-game\obj\Debug\seeking-game.pdb
