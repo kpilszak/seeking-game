@@ -41,18 +41,18 @@ namespace seeking_game
 
         private void CreateObjects()
         {
-            livingRoom = new RoomWithDoor("Living room", "ancient carpet", "in the closet", "oak door with a brass handle");
-            kitchen = new RoomWithDoor("Kitchen", "stainless steel cutlery","in the cupboard", "sliding doors");
-            stairs = new Room("Stairs", "wooden handrail");
-            diningRoom = new RoomWithHidingPlace("Dining room", "crystal chandelier", "in the locker");
-            hallway = new RoomWithHidingPlace("Hallway", "picture with a dog", "in the closet");
-            bathroom = new RoomWithHidingPlace("Bathroom", "basin and toilet", "in the shower");
-            masterBedroom = new RoomWithHidingPlace("Master bedroom", "big bed", "under the bed");
-            secondBedroom = new RoomWithHidingPlace("Second bedroom", "small bed", "under the bed");
-            frontYard = new OutsideWithDoor("Front yard", false, "oak door with a brass handle");
-            backYard = new OutsideWithDoor("Back yard", true, "sliding door");
-            garden = new OutsideWithHidingPlace("Garden", false, "in the shed");
-            driveway = new OutsideWithHidingPlace("Driveway", true, "in the garage");
+            livingRoom = new RoomWithDoor("living room", "ancient carpet", "in the closet", "oak door with a brass handle");
+            kitchen = new RoomWithDoor("kitchen", "stainless steel cutlery","in the cupboard", "sliding doors");
+            stairs = new Room("stairs", "wooden handrail");
+            diningRoom = new RoomWithHidingPlace("dining room", "crystal chandelier", "in the locker");
+            hallway = new RoomWithHidingPlace("hallway", "picture with a dog", "in the closet");
+            bathroom = new RoomWithHidingPlace("bathroom", "basin and toilet", "in the shower");
+            masterBedroom = new RoomWithHidingPlace("master bedroom", "big bed", "under the bed");
+            secondBedroom = new RoomWithHidingPlace("second bedroom", "small bed", "under the bed");
+            frontYard = new OutsideWithDoor("front yard", false, "oak door with a brass handle");
+            backYard = new OutsideWithDoor("back yard", true, "sliding door");
+            garden = new OutsideWithHidingPlace("garden", false, "in the shed");
+            driveway = new OutsideWithHidingPlace("driveway", true, "in the garage");
 
             livingRoom.Exits = new Location[] { diningRoom, stairs };
             kitchen.Exits = new Location[] { diningRoom };
