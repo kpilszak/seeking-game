@@ -52,18 +52,12 @@
             this.goHere.TabIndex = 1;
             this.goHere.Text = "Go here:";
             this.goHere.UseVisualStyleBackColor = true;
+            this.goHere.Click += new System.EventHandler(this.goHere_Click);
             // 
             // exits
             // 
             this.exits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.exits.FormattingEnabled = true;
-            this.exits.Items.AddRange(new object[] {
-            "Garden",
-            "Front Yard",
-            "Back Yard",
-            "Living room",
-            "Dining Room",
-            "Kitchen"});
             this.exits.Location = new System.Drawing.Point(227, 314);
             this.exits.Name = "exits";
             this.exits.Size = new System.Drawing.Size(431, 28);
