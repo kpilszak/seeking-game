@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace seeking_game
 {
-    class RoomWithDoor : Room, IHasExteriorDoor
+    class RoomWithDoor : RoomWithHidingPlace, IHasExteriorDoor
     {
-        public RoomWithDoor(string name, string decoration, string doorDescription)
-            : base(name, decoration)
+        public RoomWithDoor(string name, string decoration, string hidingPlaceName, string doorDescription)
+            : base(name, decoration, hidingPlaceName)
         {
             DoorDescription = doorDescription;
         }
