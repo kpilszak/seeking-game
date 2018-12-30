@@ -8,8 +8,8 @@ namespace seeking_game
 {
     class OutsideWithDoor : OutsideWithHidingPlace, IHasExteriorDoor
     {
-        public OutsideWithDoor(string name, bool hot, string hidingPlaceName, string doorDescription)
-            : base(name, hot, hidingPlaceName)
+        public OutsideWithDoor(string name, bool hot, string doorDescription)
+            : base(name, hot)
         {
             this.DoorDescription = doorDescription;
         }

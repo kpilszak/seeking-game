@@ -20,7 +20,7 @@ namespace seeking_game
         {
             get
             {
-                return base.Description + " Someone is possible to hide in " + HidingPlaceName + ".";
+                return base.Description + " Someone is possible to hide " + HidingPlaceName + ".";
             }
         }
     }
