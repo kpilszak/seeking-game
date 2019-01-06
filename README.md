@@ -25,7 +25,7 @@ IDE: Visual Studio 2017
 * Windows 10
 
 ## Setup
-To run this project, open in Windows this file: /seeking-game/obj/Debug/seeking-game.exe
+To run this project, open in Windows this file: <a href="https://github.com/kpilszak/seeking-game/blob/master/seeking-game/obj/Debug/seeking-game.exe">/seeking-game/obj/Debug/seeking-game.exe</a>
 
 ## Sources
 This project was created as an exercise from Jennifer Greene and Andrew Stellman book "Head First. C#".
